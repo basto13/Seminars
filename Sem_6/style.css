@@ -5,8 +5,21 @@
 
 .navBar_menu{
     margin-top: 40px;
+    margin-bottom: 40px;
 }
 
+.navBar_logo{
+    padding-top: 10px;
+}
+.menu_links{
+    padding-top: 10px;
+    padding-left: 350px;
+}
+
+.top_content{
+    margin-top: 162px;
+    margin-bottom: 162px;
+}
 
 .dots{
     width: 15px;
