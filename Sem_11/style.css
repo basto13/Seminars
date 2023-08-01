@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+img {
+    max-width: 100%;
+  }
+
+/* navbar style */
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #222;
+    flex-grow: 1;
+}
+
+.header_left, .header_right{
+    padding-bottom: 2em;
+    padding-top: 2em;
+}
+
+.header_left{
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+.logo_img{
+    margin-right: 2em;
+}
+
+/* background preview */
+
+.background_preview_content{
+    display: flex;
+    /* flex-direction: row; */
+    background: #F1E4E6;
+    padding-left: calc(50% - 800px);
+    padding-right: calc(50% - 800px);
+    margin-bottom: 65px;
+       
+}
+
+.background_left, .background_right{
+    width: 50%;
+}
+.background_right{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 2em;
+}
+
+.background_item{
+    padding-right: 1em;
+}
+
+/* offer block */
+
+.offers_menu{
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(3, 2fr);
+    margin-right: 5em;
+    margin-left: 5em;
+
+}
+
+.offer_block{
+    position: relative;
+}
+
+.bottom_offer_block{
+    grid-column: span 3;
+}
+
+.offer_content{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+/* product items */
+
+.products_heading{
+    margin-bottom: 3em;
+}
+.featured_items{
+    margin-block-end: 0;
+}
+
+.product_items{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 360px);
+    justify-content: center;
+    gap: 30px;
+}
+
+
+/* text styling */
+h3 {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+}
+
+.offer_text, .featured_items_text{
+    font-style: normal;
+    text-align: center;
+    color: #ffffff;
+}
+
+.offer_heading, .featured_items{
+    font-style: normal;
+    text-align: center;
+    color: #F16D7F;
+}
+
+.featured_items{
+    color: #222;
+}
+
+.featured_items_text, .product_description{
+   color: #9F9F9F; 
+}
+
+.price{
+    color: #F16D7F;
+}
+
