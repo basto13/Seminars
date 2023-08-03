@@ -63,11 +63,10 @@ img {
 
 .offers_menu{
     display: grid;
-    gap: 30px;
-    grid-template-columns: repeat(3, 2fr);
-    margin-right: 5em;
-    margin-left: 5em;
-
+    gap: 2%;
+    margin-right: 5%;
+    margin-left: 5%;
+    margin-bottom: 10%;
 }
 
 .offer_block{
@@ -85,19 +84,16 @@ img {
     top: 0;
     left: 0;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
     flex-direction: column;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
     justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
     align-items: center;
 }
 
 /* product items */
+
+.product_block{
+    background-color: #F8F8F8;
+}
 
 .products_heading{
     margin-bottom: 3em;
@@ -143,5 +139,15 @@ h3 {
 
 .price{
     color: #F16D7F;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px){
+.offers_menu{
+    display: grid;
+    gap: 2%;
+    margin-right: 2%;
+    margin-left: 2%;
+    margin-bottom: 10%;
+}
 }
 
