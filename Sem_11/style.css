@@ -433,9 +433,6 @@ h3 {
     font-weight: 400;
     line-height: normal;
     border: none;
-}
-
-.inputfield::placeholder {
     padding-left: 22px;
 }
 
