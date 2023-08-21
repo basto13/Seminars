@@ -27,9 +27,7 @@
 }
 
 .header_left {
-    display: flex;
-    align-items: baseline;
-    justify-content: space-between;
+    @include flex($sb);
 }
 
 .header_right {

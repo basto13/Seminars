@@ -1,0 +1,8 @@
+$sb: space-between;
+
+
+@mixin flex($sb) {
+    display: flex;
+    align-items: baseline;
+    justify-content: $sb;
+}
