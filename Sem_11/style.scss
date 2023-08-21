@@ -27,14 +27,12 @@
 }
 
 .header_left {
-    @include flex($sb);
+    @include flex_baseline($sb);
 }
 
 .header_right {
-    display: flex;
-    align-items: baseline;
+    @include flex_baseline($sb);
     max-width: 40%;
-    justify-content: space-between;
 }
 
 .navbar_menu_item {
@@ -115,8 +113,6 @@
     max-width: 100%;
 }
 
-
-
 .background_item {
     padding-right: 1em;
     max-width: 80%;
@@ -184,8 +180,7 @@
     overflow: hidden;
     backdrop-filter: blur(8px) brightness(80%);
     transition: all .3s ease-in-out;
-    justify-content: center;
-    align-items: center;
+    @include content_center();
 }
 
 .layer_border {
@@ -195,8 +190,7 @@
     padding-left: 6%;
     padding-right: 6%;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    @include content_center();
     gap: 11px;
 }
 
@@ -313,8 +307,7 @@ h3 {
     padding: 3%;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    @include content_center();
 }
 
 .service_heading {
@@ -370,8 +363,7 @@ h3 {
     width: 45%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    @include content_center();
     gap: 30px;
 }
 
@@ -394,8 +386,7 @@ h3 {
     width: 45%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    @include content_center();
 }
 
 .subscribe_form_heading {
@@ -611,11 +602,10 @@ h3 {
     /* footer section */
     .footer_section {
         display: flex;
-        justify-content: center;
         padding-left: 2%;
         padding-right: 2%;
         flex-direction: column-reverse;
-        align-items: center;
+        @include content_center();
     }
 
     .footer_left {
