@@ -1,20 +1,57 @@
 @import '../scss/helpers/_helpers.scss';
 
-.background {
-    &_left {
-        &_menu {
-            color: #F16D7F;
-            font-family: Lato;
-            font-size: 24px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: normal;
-            --TEST: FUCK;
+.background_preview {
+    &_content {
+        @include flex_wrap_block(space-between);
+        @include flex_block(center, space-between);
+        height: 148px;
+        width: 100%;
+        background: #F1E4E6;
+        padding-left: 2%;
+        padding-right: 2%;
+        padding-left: 230px;
+        padding-right: 230px;
+        margin-bottom: 0;
 
+        &_left {
+            &_menu {
+                color: $brand_pink_color;
+                font-family: Lato;
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+            }
+        }
 
+        &_right {
+            &_menu {
+                @include flex_wrap_block($jc);
 
+                &_item {
+                    color: #636363;
+                    font-family: Lato;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 300;
+                    line-height: normal;
+                    text-decoration: none;
+                    padding-right: 5px;
+                }
 
+                &_arrivals {
+                    color: $brand_pink_color;
+                    font-family: Lato;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: normal;
+                    text-decoration: none;
+                    padding-right: 0;
+                }
+            }
 
         }
     }
+
 }

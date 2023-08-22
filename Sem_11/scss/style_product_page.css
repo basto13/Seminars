@@ -1,9 +1,49 @@
-.background_left_menu {
+.background_preview_content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 148px;
+  width: 100%;
+  background: #F1E4E6;
+  padding-left: 2%;
+  padding-right: 2%;
+  padding-left: 230px;
+  padding-right: 230px;
+  margin-bottom: 0;
+}
+.background_preview_content_left_menu {
   color: #F16D7F;
   font-family: Lato;
   font-size: 24px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  --TEST: FUCK;
+}
+.background_preview_content_right_menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.background_preview_content_right_menu_item {
+  color: #636363;
+  font-family: Lato;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  text-decoration: none;
+  padding-right: 5px;
+}
+.background_preview_content_right_menu_arrivals {
+  color: #F16D7F;
+  font-family: Lato;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-decoration: none;
+  padding-right: 0;
 }/*# sourceMappingURL=style_product_page.css.map */

@@ -3,7 +3,6 @@ $jc: center;
 $bl: baseline;
 $fd: row;
 
-@mixin flex() {}
 
 @mixin flex_block($bl, $sb) {
     display: flex;
