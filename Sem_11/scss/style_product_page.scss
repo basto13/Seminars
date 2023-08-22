@@ -12,6 +12,7 @@
         padding-left: 230px;
         padding-right: 230px;
         margin-bottom: 0;
+        border-bottom: solid 1px #EAEAEA;
 
         &_left {
             &_menu {
@@ -50,8 +51,12 @@
                     padding-right: 0;
                 }
             }
-
         }
     }
+}
 
+.product_item {
+    @include flex_block(center, space-between);
+    background-color: #F7F7F7;
+    @include flex_direction($fd);
 }
