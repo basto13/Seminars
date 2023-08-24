@@ -1,0 +1,94 @@
+@import '../scss/helpers/_helpers.scss';
+
+
+summary {
+    display: block;
+}
+
+summary::-webkit-details-marker {
+    display: none;
+}
+
+.filter_sort {
+    position: relative;
+    height: 132px;
+    padding-top: 39px;
+}
+
+.filter {
+    padding: 13px 16px 16px;
+    width: 360px;
+    position: absolute;
+    box-sizing: border-box;
+
+    &[open] {
+        background: #FFFFFF;
+        box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+    }
+
+    &[open] .filter_heading {
+        color: $brand_pink_color;
+    }
+
+    &[open] path {
+        fill: $brand_pink_color;
+    }
+
+    &_summary {
+        display: flex;
+        align-items: center;
+        gap: 11px;
+    }
+
+    &_heading {
+        color: #000;
+        font-family: Lato;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+    }
+
+    &_content {
+        margin-top: 16px;
+    }
+
+    &_link_box {
+        display: flex;
+        flex-direction: column;
+        gap: 11px;
+        padding: 24px 16px;
+    }
+
+    &_head {
+        color: #6F6E6E;
+        font-family: Lato;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        padding: 8px 11px 11px 11px;
+        border-bottom: 1px solid #EBEBEB;
+        border-left: 5px solid $brand_pink_color;
+    }
+
+    &_item[open] .filter_head {
+        color: $brand_pink_color;
+    }
+
+    &_link {
+        color: #6F6E6E;
+        font-family: Lato;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        text-decoration: none;
+
+        &:hover {
+            color: $brand_pink_color;
+        }
+    }
+
+
+}
