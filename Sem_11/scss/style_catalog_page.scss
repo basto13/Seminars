@@ -11,7 +11,7 @@ summary::-webkit-details-marker {
 
 .filter_sort {
     display: flex;
-    align-items: center;
+    // align-items: center;
     position: relative;
     height: 132px;
     padding-top: 39px;
@@ -20,7 +20,7 @@ summary::-webkit-details-marker {
 .filter {
     padding: 13px 16px 16px;
     width: 360px;
-    position: relative;
+    position: absolute;
     z-index: 10;
     box-sizing: border-box;
     padding-left: 12%;
@@ -100,11 +100,11 @@ summary::-webkit-details-marker {
 
 .sort {
     display: flex;
-    // position: absolute;
     left: 490px;
     top: 51px;
     gap: 18px;
     z-index: 10;
+    position: absolute;
 
     &_details {
         position: relative;
