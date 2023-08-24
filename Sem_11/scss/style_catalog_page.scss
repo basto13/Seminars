@@ -125,4 +125,17 @@ summary::-webkit-details-marker {
         box-shadow: 6px 4px 35px 0px rgba(0, 0, 0, 0.21);
         padding: 7px 30px 11px 9px;
     }
+
+    &_check {
+        display: flex;
+        gap: 9px;
+        align-items: center;
+
+        color: #6F6E6E;
+        font-family: Roboto;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
 }
