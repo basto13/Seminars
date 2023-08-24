@@ -18,7 +18,8 @@ summary::-webkit-details-marker {
 .filter {
     padding: 13px 16px 16px;
     width: 360px;
-    position: absolute;
+    position: relative;
+    z-index: 10;
     box-sizing: border-box;
 
     &[open] {
@@ -51,6 +52,7 @@ summary::-webkit-details-marker {
 
     &_content {
         margin-top: 16px;
+        // position: absolute;
     }
 
     &_link_box {
@@ -90,5 +92,13 @@ summary::-webkit-details-marker {
         }
     }
 
+
+}
+
+.sort {
+    display: flex;
+    position: absolute;
+    left: 490px;
+    top: 51px;
 
 }

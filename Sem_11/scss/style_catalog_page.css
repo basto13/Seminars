@@ -15,7 +15,8 @@ summary::-webkit-details-marker {
 .filter {
   padding: 13px 16px 16px;
   width: 360px;
-  position: absolute;
+  position: relative;
+  z-index: 10;
   box-sizing: border-box;
 }
 .filter[open] {
@@ -75,4 +76,11 @@ summary::-webkit-details-marker {
 }
 .filter_link:hover {
   color: #F16D7F;
+}
+
+.sort {
+  display: flex;
+  position: absolute;
+  left: 490px;
+  top: 51px;
 }/*# sourceMappingURL=style_catalog_page.css.map */
