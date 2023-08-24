@@ -86,6 +86,10 @@ summary::-webkit-details-marker {
   left: 490px;
   top: 51px;
   gap: 18px;
+  z-index: 10;
+}
+.sort_details {
+  position: relative;
 }
 .sort_summary {
   display: flex;
@@ -101,9 +105,12 @@ summary::-webkit-details-marker {
   line-height: normal;
 }
 .sort_box {
+  position: absolute;
   background: #FFF;
   box-shadow: 6px 4px 35px 0px rgba(0, 0, 0, 0.21);
   padding: 7px 30px 11px 9px;
+  left: -9px;
+  top: 22px;
 }
 .sort_check {
   display: flex;
