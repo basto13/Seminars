@@ -126,6 +126,9 @@ summary::-webkit-details-marker {
     }
 
     &_box {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
         position: absolute;
         background: #FFF;
         box-shadow: 6px 4px 35px 0px rgba(0, 0, 0, 0.21);
@@ -147,4 +150,45 @@ summary::-webkit-details-marker {
         font-weight: 400;
         line-height: normal;
     }
+}
+
+// swiper styling
+
+.swiper {
+    width: 100%;
+    height: 100%;
+    min-height: 100px;
+    margin-bottom: 100px;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.swiper-pagination-bullet {
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+    font-size: 12px;
+    color: #000;
+    opacity: 1;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.swiper-pagination-bullet-active {
+    color: #fff;
+    background: #007aff;
 }
