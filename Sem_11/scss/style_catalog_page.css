@@ -7,6 +7,8 @@ summary::-webkit-details-marker {
 }
 
 .filter_sort {
+  display: flex;
+  align-items: center;
   position: relative;
   height: 132px;
   padding-top: 39px;
@@ -18,6 +20,7 @@ summary::-webkit-details-marker {
   position: relative;
   z-index: 10;
   box-sizing: border-box;
+  padding-left: 12%;
 }
 .filter[open] {
   background: #FFFFFF;
@@ -80,7 +83,25 @@ summary::-webkit-details-marker {
 
 .sort {
   display: flex;
-  position: absolute;
   left: 490px;
   top: 51px;
+  gap: 18px;
+}
+.sort_summary {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.sort_heading {
+  color: #6F6E6E;
+  font-family: Lato;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.sort_box {
+  background: #FFF;
+  box-shadow: 6px 4px 35px 0px rgba(0, 0, 0, 0.21);
+  padding: 7px 30px 11px 9px;
 }/*# sourceMappingURL=style_catalog_page.css.map */
