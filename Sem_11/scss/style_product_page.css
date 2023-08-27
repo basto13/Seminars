@@ -38,7 +38,11 @@
   text-decoration: none;
   padding-right: 5px;
 }
-.background_preview_content_right_menu_arrivals {
+.background_preview_content_right_menu_item:not(:last-child)::after {
+  content: "/";
+  padding: 2.5px;
+}
+.background_preview_content_right_menu_item:last-child {
   color: #F16D7F;
   font-family: Lato;
   font-size: 14px;

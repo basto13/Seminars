@@ -40,7 +40,12 @@
                     padding-right: 5px;
                 }
 
-                &_arrivals {
+                &_item:not(:last-child)::after {
+                    content: '/';
+                    padding: 2.5px;
+                }
+
+                &_item:last-child {
                     color: $brand_pink_color;
                     font-family: Lato;
                     font-size: 14px;
