@@ -61,6 +61,7 @@
 .purchase_list .action_buttons_item:hover {
   background-color: #F16D7F;
   color: white;
+  transition-duration: 0.2s;
 }
 .purchase .item_info {
   padding: 22px 28px 62px 31px;
@@ -86,6 +87,7 @@
   height: 18px;
 }
 .purchase .delete_item_img:hover {
+  transition-duration: 0.2s;
   filter: brightness(0) saturate(100%) invert(57%) sepia(19%) saturate(1629%) hue-rotate(304deg) brightness(97%) contrast(94%);
 }
 .purchase .item_description {
@@ -147,6 +149,7 @@
 .purchase .shipping_submission:hover {
   background-color: #F16D7F;
   color: white;
+  transition-duration: 0.2s;
 }
 .purchase .checkout {
   background-color: #F5F3F3;
@@ -197,4 +200,5 @@
 .purchase .checkout_button:hover {
   background-color: rgb(175, 175, 246);
   color: #F16D7F;
+  transition-duration: 0.2s;
 }/*# sourceMappingURL=style_basket_page.css.map */

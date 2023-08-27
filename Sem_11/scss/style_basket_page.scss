@@ -67,6 +67,7 @@
             &_item:hover {
                 background-color: $brand_pink_color;
                 color: white;
+                transition-duration: .2s;
             }
         }
     }
@@ -101,6 +102,7 @@
     }
 
     .delete_item_img:hover {
+        transition-duration: .2s;
         filter: brightness(0) saturate(100%) invert(57%) sepia(19%) saturate(1629%) hue-rotate(304deg) brightness(97%) contrast(94%);
     }
 
@@ -176,6 +178,7 @@
         &_submission:hover {
             background-color: $brand_pink_color;
             color: white;
+            transition-duration: .2s;
         }
     }
 
@@ -234,6 +237,7 @@
         &_button:hover {
             background-color: rgb(175, 175, 246);
             color: $brand_pink_color;
+            transition-duration: .2s;
         }
     }
 
