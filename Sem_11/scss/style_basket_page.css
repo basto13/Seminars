@@ -1,1 +1,200 @@
-/*# sourceMappingURL=style_basket_page.css.map */
+.background_preview_content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  height: 148px;
+  width: 100%;
+  background: #F1E4E6;
+  margin-bottom: 0;
+  border-bottom: solid 1px #EAEAEA;
+}
+
+.background_preview_content {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  background: #F1E4E6;
+  padding-left: 220px;
+  padding-right: 2%;
+  margin-bottom: 10%;
+}
+
+.purchase {
+  margin-top: 96px;
+  margin-bottom: 128px;
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  justify-content: center;
+  gap: 130px;
+  padding: 0 230px;
+}
+.purchase_list {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: center;
+}
+.purchase_list_item {
+  min-width: 600px;
+  display: flex;
+  box-shadow: 20px 20px 20px #c6c5c5;
+}
+.purchase_list .action_buttons {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 32px;
+}
+.purchase_list .action_buttons_item {
+  width: 235px;
+  height: 50px;
+  color: #000;
+  font-family: Lato;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  border: 1px solid #A4A4A4;
+  background-color: white;
+}
+.purchase_list .action_buttons_item:hover {
+  background-color: #F16D7F;
+  color: white;
+}
+.purchase .item_info {
+  padding: 22px 28px 62px 31px;
+}
+.purchase .item_title {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+}
+.purchase .item_heading {
+  max-width: 262px;
+  color: #222;
+  font-family: Lato;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.purchase .delete_item {
+  border: none;
+  background-color: white;
+  width: 18px;
+  height: 18px;
+}
+.purchase .delete_item_img:hover {
+  filter: brightness(0) saturate(100%) invert(57%) sepia(19%) saturate(1629%) hue-rotate(304deg) brightness(97%) contrast(94%);
+}
+.purchase .item_description {
+  margin-top: 42px;
+  color: #575757;
+  font-family: Lato;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.purchase .item_description_highlight {
+  color: #6F6E6E;
+  font-family: Lato;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.purchase .item_description_highlight_price {
+  color: #F16D7F;
+}
+.purchase .item_description_quantity {
+  border: 1px solid black;
+}
+.purchase_purchase_info {
+  display: flex;
+  flex-direction: column;
+}
+.purchase .shipping_heading {
+  color: #222;
+  font-family: Lato;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+.purchase .shipping .address_form {
+  display: grid;
+  gap: 20px;
+  padding: 20px 0 20px 0;
+}
+.purchase .shipping .address_inputfield {
+  height: 45px;
+  width: 360px;
+}
+.purchase .shipping_submission {
+  width: 100px;
+  height: 35px;
+  color: #4A4A4A;
+  font-family: Lato;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  border: 1px solid #A4A4A4;
+  background-color: white;
+}
+.purchase .shipping_submission:hover {
+  background-color: #F16D7F;
+  color: white;
+}
+.purchase .checkout {
+  background-color: #F5F3F3;
+  padding: 39px 43px 42px 44px;
+  margin-top: 77px;
+}
+.purchase .checkout_sum {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+.purchase .checkout .subtotal {
+  color: #4A4A4A;
+  font-family: Lato;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.purchase .checkout .subtotal_sum {
+  padding-left: 20px;
+}
+.purchase .checkout .grandtotal {
+  color: #222;
+  font-family: Lato;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+.purchase .checkout .grandtotal_sum {
+  color: #F16D7F;
+  padding-left: 20px;
+}
+.purchase .checkout_button {
+  background-color: #F16D7F;
+  width: 273px;
+  height: 50px;
+  color: #FFF;
+  font-family: Lato;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  border: none;
+  margin-top: 17px;
+}
+.purchase .checkout_button:hover {
+  background-color: rgb(175, 175, 246);
+  color: #F16D7F;
+}/*# sourceMappingURL=style_basket_page.css.map */

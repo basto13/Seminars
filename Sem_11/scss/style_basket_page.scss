@@ -1,1 +1,240 @@
 @import '../scss/helpers/_helpers.scss';
+
+
+.background_preview_content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    height: 148px;
+    width: 100%;
+    background: #F1E4E6;
+    margin-bottom: 0;
+    border-bottom: solid 1px #EAEAEA;
+}
+
+.background_preview_content {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    background: #F1E4E6;
+    padding-left: 220px;
+    padding-right: 2%;
+    margin-bottom: 10%;
+}
+
+.purchase {
+    margin-top: 96px;
+    margin-bottom: 128px;
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: center;
+    gap: 130px;
+    padding: 0 230px;
+
+
+    &_list {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        align-items: center;
+
+        &_item {
+            min-width: 600px;
+            display: flex;
+            box-shadow: 20px 20px 20px #c6c5c5;
+        }
+
+        .action_buttons {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            margin-top: 32px;
+
+            &_item {
+                width: 235px;
+                height: 50px;
+                color: #000;
+                font-family: Lato;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 300;
+                line-height: normal;
+                border: 1px solid #A4A4A4;
+                background-color: white;
+            }
+
+            &_item:hover {
+                background-color: $brand_pink_color;
+                color: white;
+            }
+        }
+    }
+
+
+    .item_info {
+        padding: 22px 28px 62px 31px;
+    }
+
+    .item_title {
+
+        display: flex;
+        flex-direction: row;
+        align-items: baseline;
+    }
+
+    .item_heading {
+        max-width: 262px;
+        color: #222;
+        font-family: Lato;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    .delete_item {
+        border: none;
+        background-color: white;
+        width: 18px;
+        height: 18px;
+    }
+
+    .delete_item_img:hover {
+        filter: brightness(0) saturate(100%) invert(57%) sepia(19%) saturate(1629%) hue-rotate(304deg) brightness(97%) contrast(94%);
+    }
+
+    .item_description {
+        margin-top: 42px;
+        color: #575757;
+        font-family: Lato;
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+
+        &_highlight {
+            color: #6F6E6E;
+            font-family: Lato;
+            font-size: 22px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+
+            &_price {
+                color: $brand_pink_color;
+            }
+
+        }
+
+        &_quantity {
+            border: 1px solid black;
+        }
+    }
+
+    &_purchase_info {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .shipping {
+
+        &_heading {
+            color: #222;
+            font-family: Lato;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: normal;
+        }
+
+        .address_form {
+            display: grid;
+            // width: 360px;
+            gap: 20px;
+            padding: 20px 0 20px 0
+        }
+
+        .address_inputfield {
+            height: 45px;
+            width: 360px;
+        }
+
+        &_submission {
+            width: 100px;
+            height: 35px;
+            color: #4A4A4A;
+            font-family: Lato;
+            font-size: 11px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: normal;
+            border: 1px solid #A4A4A4;
+            background-color: white;
+        }
+
+        &_submission:hover {
+            background-color: $brand_pink_color;
+            color: white;
+        }
+    }
+
+    .checkout {
+        background-color: #F5F3F3;
+        padding: 39px 43px 42px 44px;
+        margin-top: 77px;
+
+        &_sum {
+            display: flex;
+            flex-direction: column;
+            align-items: end;
+        }
+
+        .subtotal {
+            color: #4A4A4A;
+            font-family: Lato;
+            font-size: 11px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+
+            &_sum {
+                padding-left: 20px;
+            }
+        }
+
+        .grandtotal {
+            color: #222;
+            font-family: Lato;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: normal;
+
+            &_sum {
+                color: $brand_pink_color;
+                padding-left: 20px;
+            }
+        }
+
+        &_button {
+            background-color: $brand_pink_color;
+            width: 273px;
+            height: 50px;
+            color: #FFF;
+            font-family: Lato;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: normal;
+            border: none;
+            margin-top: 17px;
+        }
+
+        &_button:hover {
+            background-color: rgb(175, 175, 246);
+            color: $brand_pink_color;
+        }
+    }
+
+}
