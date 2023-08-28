@@ -1,0 +1,22 @@
+.registration-wrapper {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-evenly;
+}
+
+.information {
+  max-width: 652px;
+}
+
+.registration,
+.information {
+  border: 2px solid black;
+}
+
+.registration {
+  max-width: 360px;
+}
+.registration__form {
+  display: flex;
+  flex-direction: column;
+}/*# sourceMappingURL=style_registration_page.css.map */

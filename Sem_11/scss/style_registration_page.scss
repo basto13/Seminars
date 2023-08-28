@@ -1,0 +1,29 @@
+@import '../scss/helpers/_helpers.scss';
+
+.registration-wrapper {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+
+}
+
+
+.information {
+    max-width: 652px;
+}
+
+.registration,
+.information {
+    border: 2px solid black;
+}
+
+// form styling
+
+.registration {
+    max-width: 360px;
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+    }
+}

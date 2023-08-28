@@ -21,26 +21,21 @@ summary::-webkit-details-marker {
   box-sizing: border-box;
   padding-left: 12%;
 }
-
 .filter[open] {
   background: #FFFFFF;
   box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
 }
-
 .filter[open] .filter_heading {
   color: #F16D7F;
 }
-
 .filter[open] path {
   fill: #F16D7F;
 }
-
 .filter_summary {
   display: flex;
   align-items: center;
   gap: 11px;
 }
-
 .filter_heading {
   color: #000;
   font-family: Lato;
@@ -49,18 +44,15 @@ summary::-webkit-details-marker {
   font-weight: 600;
   line-height: normal;
 }
-
 .filter_content {
   margin-top: 16px;
 }
-
 .filter_link_box {
   display: flex;
   flex-direction: column;
   gap: 11px;
   padding: 24px 16px;
 }
-
 .filter_head {
   color: #6F6E6E;
   font-family: Lato;
@@ -72,11 +64,9 @@ summary::-webkit-details-marker {
   border-bottom: 1px solid #EBEBEB;
   border-left: 5px solid #F16D7F;
 }
-
 .filter_item[open] .filter_head {
   color: #F16D7F;
 }
-
 .filter_link {
   color: #6F6E6E;
   font-family: Lato;
@@ -86,9 +76,8 @@ summary::-webkit-details-marker {
   line-height: normal;
   text-decoration: none;
 }
-
-.filter_link:hover  {
-  fill: #F16D7F;
+.filter_link:hover {
+  color: #F16D7F;
 }
 
 .sort {
@@ -99,17 +88,14 @@ summary::-webkit-details-marker {
   z-index: 10;
   position: absolute;
 }
-
 .sort_details {
   position: relative;
 }
-
 .sort_summary {
   display: flex;
   align-items: center;
   gap: 10px;
 }
-
 .sort_heading {
   color: #6F6E6E;
   font-family: Lato;
@@ -118,7 +104,6 @@ summary::-webkit-details-marker {
   font-weight: 400;
   line-height: normal;
 }
-
 .sort_box {
   display: flex;
   flex-direction: column;
@@ -130,7 +115,6 @@ summary::-webkit-details-marker {
   left: -9px;
   top: 22px;
 }
-
 .sort_check {
   display: flex;
   gap: 9px;
@@ -168,7 +152,7 @@ summary::-webkit-details-marker {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
 }
 
 .swiper-pagination-bullet {
@@ -185,6 +169,4 @@ summary::-webkit-details-marker {
 .swiper-pagination-bullet-active {
   color: #fff;
   background: #007aff;
-}
-
-/*# sourceMappingURL=style_catalog_page.css.map */
+}/*# sourceMappingURL=style_catalog_page.css.map */
