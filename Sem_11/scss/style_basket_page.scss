@@ -1,8 +1,8 @@
 @import '../scss/helpers/_helpers.scss';
 
 .container {
-	max-width: 1140px;
-	margin: 0 auto;
+    max-width: 1140px;
+    margin: 0 auto;
 }
 
 .background_preview_content {
@@ -128,7 +128,8 @@
         &_quantity {
             border: 1px solid black;
         }
-        &_input{
+
+        &_input {
             text-align: center;
             width: 44px;
             margin-left: 24px;
@@ -243,9 +244,7 @@
         }
 
         &_button:hover {
-            background-color: rgb(175, 175, 246);
-            color: $brand_pink_color;
-            transition-duration: .2s;
+            @include hover_button();
         }
     }
 

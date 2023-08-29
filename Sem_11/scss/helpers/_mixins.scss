@@ -32,3 +32,20 @@ $fd: row;
     flex-direction: column;
     align-items: center;
 }
+
+@mixin hover_button() {
+    background-color: $hover_button;
+    color: $brand_pink_color;
+    transition-duration: .2s;
+}
+
+//text format
+
+@mixin standard_text() {
+    color: #222;
+    font-family: Lato;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
