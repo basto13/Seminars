@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./scss/style_mainpage.css">
     <link rel="stylesheet" href="./scss/style_product_page.css">
+    <link rel="stylesheet" href="./scss/style_registration_page.css">
     <link rel="stylesheet" href="./scss/style_basket_page.css">
     <title>Basket page</title>
 </head>
@@ -64,10 +65,10 @@
         </div>
     </section>
 
-    <div class="purchase container">
+    <div class="purchase">
         <div class="purchase_list">
             <div class="purchase_list_item">
-                <img src="./img/purchase_list_1.jpg" alt="purchase_item">
+                <img class="product-img" src="./img/purchase_list_1.jpg" alt="purchase_item">
                 <div class="item_info">
                     <div class="item_title">
                         <h class="item_heading">MANGO PEOPLE T-SHIRT</h>
@@ -81,9 +82,12 @@
                         </button>
                     </div>
                     <div class="item_description">
-                        <p class="item_price">Price: <span class="item_description_highlight_price">$300</span></p>
-                        <p class="item_color">Color: <span class="item_description_highlight">Red</span></p>
-                        <p class="item_size">Size: <span class="item_description_highlight">XL</span></p>
+                        <p class="item_price">Price: <span
+                                class="item_description_element item_description_highlight_price">$300</span></p>
+                        <p class="item_color">Color: <span
+                                class="item_description_element item_description_highlight">Red</span></p>
+                        <p class="item_size">Size: <span
+                                class="item_description_element item_description_highlight">XL</span></p>
                         <p>
                             Quantity: <input class="item_description_input" type="number" value="2" />
                         </p>
@@ -91,7 +95,7 @@
                 </div>
             </div>
             <div class="purchase_list_item">
-                <img src="./img/purchase_list_1.jpg" alt="purchase_item">
+                <img class="product-img" src="./img/purchase_list_1.jpg" alt="purchase_item">
                 <div class="item_info">
                     <div class="item_title">
                         <h class="item_heading">MANGO PEOPLE T-SHIRT</h>
