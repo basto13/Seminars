@@ -47,6 +47,7 @@ $fd: row;
     font-style: normal;
     font-weight: 300;
     line-height: normal;
+    font-size: $font_size;
 }
 
 @mixin heading_text($color, $font_size) {

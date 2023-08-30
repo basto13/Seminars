@@ -1,7 +1,13 @@
 @import '../scss/helpers/_helpers.scss';
 
+.background_preview_content {
+    justify-content: flex-start;
+    padding-left: calc(8px + 1.5625vw);
+}
+
 .registration-wrapper {
     @include flex_block(flex-start, space-evenly);
+    margin-bottom: 100px;
 }
 
 .information {
@@ -18,13 +24,7 @@
         flex-direction: column;
 
         &_heading {
-            @include standard_text();
-            color: #222;
-            font-family: Lato;
-            font-size: 16px;
-            font-style: normal;
-            font-weight: 300;
-            line-height: normal;
+            @include standard_text(#222, 16px);
         }
 
         &_input {
@@ -38,9 +38,7 @@
             align-items: center;
             margin-top: 31px;
             margin-bottom: 33px;
-            @include standard_text();
-            color: #000;
-            font-size: 11px;
+            @include standard_text(#000, 11px);
 
             input[type="radio"] {
                 width: 17px;
@@ -57,12 +55,7 @@
         }
 
         &_text {
-            color: #B1B1B1;
-            font-family: Lato;
-            font-size: 13px;
-            font-style: normal;
-            font-weight: 300;
-            line-height: normal;
+            @include standard_text(#B1B1B1, 13px);
             margin-top: 15px;
         }
     }
@@ -72,8 +65,7 @@
         background-color: $brand_pink_color;
         width: 167px;
         height: 50px;
-        @include standard_text();
-        color: #FFF;
+        @include standard_text(#FFF, 16px);
         border: none;
         margin-top: 17px;
     }
@@ -87,9 +79,7 @@
 .information {
     list-style-position: inside;
     max-width: 652px;
-    @include standard_text();
-    color: #000;
-    font-size: 24px;
+    @include standard_text(#000, 24px);
 
     &__text {
         margin-top: 21px;
@@ -108,5 +98,72 @@
         &_item::marker {
             content: url('../img/li.svg');
         }
+    }
+}
+
+//media quaries
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+
+    .navbar {
+        justify-content: space-between;
+
+    }
+
+    .background_preview_content {
+        padding-left: 16px;
+    }
+
+    .registration-wrapper {
+        @include flex_block(flex-start, center);
+        padding-left: 16px;
+        padding-right: 16px;
+        gap: 22px;
+    }
+
+    .information {
+        font-size: 16px;
+    }
+
+    .subscribe_text {
+        margin-bottom: 48px;
+    }
+
+    .input_form {
+        margin-bottom: 220px;
+    }
+}
+
+@media (max-width: 767px) {
+
+    .background_preview_content {
+        justify-content: center;
+        padding-left: 0;
+    }
+
+    .registration-wrapper {
+        @include flex_direction(column);
+        align-items: center;
+        padding-left: 8px;
+        padding-right: 8px;
+        gap: 22px;
+    }
+
+    .registration {
+        margin-bottom: 40px;
+    }
+
+    .information {
+        font-size: 16px;
+        max-width: 359px;
+    }
+
+    //subscription section
+    .subscribe_text {
+        margin-bottom: 60px;
+    }
+
+    .input_form {
+        margin-bottom: 110px;
     }
 }

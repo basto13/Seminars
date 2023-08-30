@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="./scss/style_catalog_page.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
     <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
-    <script>
+    <!-- <script>
         let isMenuOpen = false;
 
         function showMenu(clickedElement) {
@@ -30,7 +30,7 @@
 
 
         }
-    </script>
+    </script> -->
     <title>Catalog</title>
 </head>
 
@@ -632,13 +632,36 @@
         </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></scrip >
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 
-            <!-- Initialize Swiper -->
-            <script>
-                var swiper = new Swiper(".mySwiper", {
-                    pagination: {
-                    el: ".swiper-pagination",
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            // // Default parameters
+            // slidesPerView: 1,
+            // spaceBetween: 10,
+            // // Responsive breakpoints
+            // breakpoints: {
+            //     // when window width is >= 320px
+            //     320: {
+            //         slidesPerView: 2,
+            //         spaceBetween: 20
+            //     },
+            //     // when window width is >= 480px
+            //     480: {
+            //         slidesPerView: 3,
+            //         spaceBetween: 30
+            //     },
+            //     // when window width is >= 640px
+            //     640: {
+            //         slidesPerView: 4,
+            //         spaceBetween: 40
+            //     },
+            pagination: {
+                el: ".swiper-pagination",
                 clickable: true,
                 renderBullet: function (index, className) {
                     return '<span class="' + className + '">' + (index + 1) + "</span>";
@@ -646,7 +669,6 @@
             },
         });
     </script>
-
 </body>
 
 </html>

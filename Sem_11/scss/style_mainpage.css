@@ -38,6 +38,9 @@
   max-width: 40%;
 }
 
+.navbar_menu {
+  padding: 20px;
+}
 .navbar_menu_item {
   position: relative;
   display: inline-block;
@@ -58,10 +61,6 @@
 /* navbar dropdown menu */
 .navbar_menu_item:hover .dropdown_content {
   display: block;
-}
-
-.navbar_menu {
-  margin: 20%;
 }
 
 .logo_menu,
@@ -362,6 +361,7 @@ h3 {
   width: 100%;
   gap: 10%;
   min-height: 448px;
+  padding-top: 56px;
 }
 
 .subscribe_info {
@@ -517,6 +517,9 @@ h3 {
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .navbar {
+    justify-content: space-between;
+  }
   .offers_menu {
     display: grid;
     gap: 2%;
@@ -548,8 +551,13 @@ h3 {
   }
 }
 @media (max-width: 767px) {
-  .logo_personal_account,
-  .logo_basket {
+  .navbar {
+    justify-content: space-between;
+  }
+  .navbar_menu:nth-child(2) {
+    display: none;
+  }
+  .navbar_menu:nth-child(3) {
     display: none;
   }
   .background_preview_content {
@@ -564,6 +572,7 @@ h3 {
   }
   .navbar_menu {
     display: block;
+    padding: 20px;
   }
   .dropdown_content {
     right: 0;

@@ -1,7 +1,13 @@
+.background_preview_content {
+  justify-content: flex-start;
+  padding-left: calc(8px + 1.5625vw);
+}
+
 .registration-wrapper {
   display: flex;
   align-items: flex-start;
   justify-content: space-evenly;
+  margin-bottom: 100px;
 }
 
 .information {
@@ -19,16 +25,10 @@
 .registration__form_heading {
   color: #222;
   font-family: Lato;
-  font-size: 16px;
   font-style: normal;
   font-weight: 300;
   line-height: normal;
-  color: #222;
-  font-family: Lato;
   font-size: 16px;
-  font-style: normal;
-  font-weight: 300;
-  line-height: normal;
 }
 .registration__form_input {
   width: 358.986px;
@@ -41,13 +41,11 @@
   align-items: center;
   margin-top: 31px;
   margin-bottom: 33px;
-  color: #222;
+  color: #000;
   font-family: Lato;
-  font-size: 16px;
   font-style: normal;
   font-weight: 300;
   line-height: normal;
-  color: #000;
   font-size: 11px;
 }
 .registration__form_sex-choice input[type=radio] {
@@ -64,10 +62,10 @@
 .registration__form_text {
   color: #B1B1B1;
   font-family: Lato;
-  font-size: 13px;
   font-style: normal;
   font-weight: 300;
   line-height: normal;
+  font-size: 13px;
   margin-top: 15px;
 }
 .registration__button {
@@ -75,13 +73,12 @@
   background-color: #F16D7F;
   width: 167px;
   height: 50px;
-  color: #222;
+  color: #FFF;
   font-family: Lato;
-  font-size: 16px;
   font-style: normal;
   font-weight: 300;
   line-height: normal;
-  color: #FFF;
+  font-size: 16px;
   border: none;
   margin-top: 17px;
 }
@@ -94,13 +91,11 @@
 .information {
   list-style-position: inside;
   max-width: 652px;
-  color: #222;
+  color: #000;
   font-family: Lato;
-  font-size: 16px;
   font-style: normal;
   font-weight: 300;
   line-height: normal;
-  color: #000;
   font-size: 24px;
 }
 .information__text {
@@ -117,4 +112,57 @@
 }
 .information__text_item::marker {
   content: url("../img/li.svg");
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .navbar {
+    justify-content: space-between;
+  }
+  .background_preview_content {
+    padding-left: 16px;
+  }
+  .registration-wrapper {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding-left: 16px;
+    padding-right: 16px;
+    gap: 22px;
+  }
+  .information {
+    font-size: 16px;
+  }
+  .subscribe_text {
+    margin-bottom: 48px;
+  }
+  .input_form {
+    margin-bottom: 220px;
+  }
+}
+@media (max-width: 767px) {
+  .background_preview_content {
+    justify-content: center;
+    padding-left: 0;
+  }
+  .registration-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 8px;
+    padding-right: 8px;
+    gap: 22px;
+  }
+  .registration {
+    margin-bottom: 40px;
+  }
+  .information {
+    font-size: 16px;
+    max-width: 359px;
+  }
+  .subscribe_text {
+    margin-bottom: 60px;
+  }
+  .input_form {
+    margin-bottom: 110px;
+  }
 }/*# sourceMappingURL=style_registration_page.css.map */
