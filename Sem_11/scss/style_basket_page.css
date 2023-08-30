@@ -9,9 +9,9 @@
   margin-top: 96px;
   margin-bottom: 128px;
   display: flex;
-  flex-direction: row;
   align-items: start;
   justify-content: space-around;
+  flex-direction: row;
   gap: 130px;
 }
 .purchase_list {
@@ -56,13 +56,14 @@
   align-items: baseline;
 }
 .purchase .item_heading {
-  max-width: 262px;
   color: #222;
   font-family: Lato;
   font-size: 24px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 300;
   line-height: normal;
+  max-width: 262px;
+  font-weight: 400;
 }
 .purchase .delete_item {
   border: none;

@@ -10,21 +10,17 @@
 .purchase {
     margin-top: 96px;
     margin-bottom: 128px;
-    display: flex;
+    @include flex_block(start, space-around);
     flex-direction: row;
-    align-items: start;
-    justify-content: space-around;
     gap: 130px;
 
     // left side of content
     &_list {
-        display: flex;
-        flex-direction: column;
+        @include flex_direction(column);
         gap: 40px;
         align-items: center;
 
         &_item {
-            // min-width: 600px;
             display: flex;
             box-shadow: 20px 20px 20px #c6c5c5;
         }
@@ -61,20 +57,14 @@
     }
 
     .item_title {
-
-        display: flex;
-        flex-direction: row;
+        @include flex_direction($fd);
         align-items: baseline;
     }
 
     .item_heading {
+        @include heading_text($text_color, 24px);
         max-width: 262px;
-        color: #222;
-        font-family: Lato;
-        font-size: 24px;
-        font-style: normal;
         font-weight: 400;
-        line-height: normal;
     }
 
     .delete_item {
@@ -248,6 +238,7 @@
 @media only screen and (min-width: 768px) and (max-width: 1139px) {
 
     .purchase {
+
         flex-direction: column;
         justify-content: center;
         align-items: center;
