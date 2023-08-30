@@ -600,6 +600,12 @@ h3 {
     flex-direction: column;
     align-items: center;
   }
+  .subscribe_text {
+    margin-bottom: 60px;
+  }
+  .input_form {
+    margin-bottom: 110px;
+  }
   /* footer section */
   .footer_section {
     display: flex;

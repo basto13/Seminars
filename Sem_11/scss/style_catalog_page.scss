@@ -196,3 +196,22 @@ summary::-webkit-details-marker {
     color: #fff;
     background: #007aff;
 }
+
+@media only screen and (min-width: 768px) and (max-width: 1139px) {
+
+    .filter_sort {
+        justify-content: space-between;
+
+        .filter {
+            padding-left: 0;
+        }
+    }
+
+    .subscribe_text {
+        margin-bottom: 60px;
+    }
+
+    .input_form {
+        margin-bottom: 110px;
+    }
+}
