@@ -1,17 +1,9 @@
 .background_preview_content {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
   height: 148px;
-  width: 100%;
   background: #F1E4E6;
-  padding-left: 2%;
-  padding-right: 2%;
-  padding-left: 230px;
-  padding-right: 230px;
   margin-bottom: 0;
   border-bottom: solid 1px #EAEAEA;
 }
@@ -20,8 +12,9 @@
   font-family: Lato;
   font-size: 24px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 300;
   line-height: normal;
+  font-weight: 400;
 }
 .background_preview_content_right_menu {
   display: flex;
@@ -31,11 +24,9 @@
 .background_preview_content_right_menu_item {
   color: #636363;
   font-family: Lato;
-  font-size: 14px;
   font-style: normal;
   font-weight: 300;
   line-height: normal;
-  text-decoration: none;
   padding-right: 5px;
 }
 .background_preview_content_right_menu_item:not(:last-child)::after {
@@ -45,11 +36,10 @@
 .background_preview_content_right_menu_item:last-child {
   color: #F16D7F;
   font-family: Lato;
-  font-size: 14px;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 300;
   line-height: normal;
-  text-decoration: none;
+  font-weight: 700;
   padding-right: 0;
 }
 
@@ -74,7 +64,7 @@
 }
 
 .slider_button:hover {
-  color: pink;
+  color: #F16D7F;
 }
 
 .product_description {
@@ -112,8 +102,12 @@
 }
 .product_description_text {
   color: #5E5E5E;
-  margin-bottom: 18px;
-  max-width: 555px;
+  font-family: Lato;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  text-align: center;
 }
 .product_description_price {
   color: #EF5B70;
@@ -140,6 +134,9 @@
 }
 
 .product_description_add_cart {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
   width: 212px;
   height: 48px;
   border: solid #FF6A6A;
@@ -147,9 +144,6 @@
   padding-bottom: 3%;
   padding-left: 24px;
   padding-right: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
   gap: 11px;
   margin: 30px;
 }
@@ -158,17 +152,18 @@
   font-family: Lato;
   font-size: 14px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 300;
   line-height: normal;
+  font-weight: 400;
 }
 
 .product_block {
   background-color: #F8F8F8;
+  margin-bottom: 100px;
 }
 .product_block .product_preview_text {
   color: #9F9F9F;
   font-family: Lato;
-  font-size: 14px;
   font-style: normal;
   font-weight: 300;
   line-height: normal;
@@ -179,4 +174,31 @@
 
 .subscribtion_section {
   background-image: url(../img/sunscription_background.png);
+}
+
+@media (max-width: 1140px) {
+  .product_block:last-child {
+    display: none;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .background_preview_content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .product_description {
+    width: 100%;
+  }
+}
+@media (max-width: 767px) {
+  .background_preview_content {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+  }
+  .product_description {
+    width: 100%;
+  }
 }/*# sourceMappingURL=style_product_page.css.map */

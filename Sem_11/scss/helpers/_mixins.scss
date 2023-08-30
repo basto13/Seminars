@@ -41,10 +41,18 @@ $fd: row;
 
 //text format
 
-@mixin standard_text() {
-    color: #222;
+@mixin standard_text($color, $font_size) {
+    color: $color;
     font-family: Lato;
-    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+@mixin heading_text($color, $font_size) {
+    color: $color;
+    font-family: Lato;
+    font-size: $font_size;
     font-style: normal;
     font-weight: 300;
     line-height: normal;

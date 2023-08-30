@@ -2,26 +2,16 @@
 
 .background_preview {
     &_content {
-        @include flex_wrap_block(space-between);
-        @include flex_block(center, space-between);
+        @include flex_block(center, space-evenly);
         height: 148px;
-        width: 100%;
         background: #F1E4E6;
-        padding-left: 2%;
-        padding-right: 2%;
-        padding-left: 230px;
-        padding-right: 230px;
         margin-bottom: 0;
         border-bottom: solid 1px #EAEAEA;
 
         &_left {
             &_menu {
-                color: $brand_pink_color;
-                font-family: Lato;
-                font-size: 24px;
-                font-style: normal;
+                @include heading_text($brand_pink_color, 24px);
                 font-weight: 400;
-                line-height: normal;
             }
         }
 
@@ -30,13 +20,7 @@
                 @include flex_wrap_block($jc);
 
                 &_item {
-                    color: #636363;
-                    font-family: Lato;
-                    font-size: 14px;
-                    font-style: normal;
-                    font-weight: 300;
-                    line-height: normal;
-                    text-decoration: none;
+                    @include standard_text(#636363, $font_size);
                     padding-right: 5px;
                 }
 
@@ -46,19 +30,16 @@
                 }
 
                 &_item:last-child {
-                    color: $brand_pink_color;
-                    font-family: Lato;
-                    font-size: 14px;
-                    font-style: normal;
+                    @include standard_text($brand_pink_color, $font_size);
                     font-weight: 700;
-                    line-height: normal;
-                    text-decoration: none;
                     padding-right: 0;
                 }
             }
         }
     }
 }
+
+//products
 
 .product_item {
     @include flex_block(center, space-between);
@@ -78,7 +59,7 @@
 }
 
 .slider_button:hover {
-    color: pink;
+    color: $brand_pink_color;
 }
 
 .product_description {
@@ -95,37 +76,21 @@
     gap: 12px;
 
     &_heading_1 {
-        color: $brand_pink_color;
-        font-family: Lato;
-        font-size: 14px;
-        font-style: normal;
-        font-weight: 300;
-        line-height: normal;
+        @include heading_text($brand_pink_color, $font_size);
     }
 
     &_heading_2 {
-        color: #4D4D4D;
-        font-family: Lato;
-        font-size: 18px;
-        font-style: normal;
-        font-weight: 300;
-        line-height: normal;
+        @include heading_text(#4D4D4D, 18px);
         margin-bottom: 30px;
     }
 
     &_text {
-        color: #5E5E5E;
-        margin-bottom: 18px;
-        max-width: 555px;
+        @include heading_text(#5E5E5E, $font_size);
+        text-align: center;
     }
 
     &_price {
-        color: #EF5B70;
-        font-family: Lato;
-        font-size: 24px;
-        font-style: normal;
-        font-weight: 300;
-        line-height: normal;
+        @include heading_text(#EF5B70, 24px);
         margin-bottom: 40px;
     }
 
@@ -145,6 +110,7 @@
 }
 
 .product_description_add_cart {
+    @include flex_block(center, flex-start);
     width: 212px;
     height: 48px;
     border: solid #FF6A6A;
@@ -152,32 +118,21 @@
     padding-bottom: 3%;
     padding-left: 24px;
     padding-right: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
     gap: 11px;
     margin: 30px;
 
     &_label {
-        color: #F26376;
-        font-family: Lato;
-        font-size: 14px;
-        font-style: normal;
+        @include heading_text(#F26376, $font_size);
         font-weight: 400;
-        line-height: normal;
     }
 }
 
 .product_block {
     background-color: #F8F8F8;
+    margin-bottom: 100px;
 
     .product_preview_text {
-        color: #9F9F9F;
-        font-family: Lato;
-        font-size: 14px;
-        font-style: normal;
-        font-weight: 300;
-        line-height: normal;
+        @include standard_text(#9F9F9F, 14px);
     }
 
     .price {
@@ -187,4 +142,40 @@
 
 .subscribtion_section {
     background-image: url(../img/sunscription_background.png);
+}
+
+@media (max-width: 1140px) {
+    .product_block:last-child {
+        display: none;
+    }
+}
+
+//media quaries
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+
+    //background preview (main menu)
+    .background_preview {
+        &_content {
+            @include flex_block(center, space-between);
+        }
+    }
+
+    .product_description {
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 767px) {
+
+    //background preview (main menu)
+    .background_preview {
+        &_content {
+            @include flex_wrap_column();
+        }
+    }
+
+    .product_description {
+        width: 100%;
+    }
 }
