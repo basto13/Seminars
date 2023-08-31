@@ -171,6 +171,10 @@ summary::-webkit-details-marker {
   background: #007aff;
 }
 
+.product_items {
+  gap: 30px;
+}
+
 @media only screen and (min-width: 768px) and (max-width: 1139px) {
   .filter_sort {
     justify-content: space-between;
@@ -185,8 +189,15 @@ summary::-webkit-details-marker {
     margin-bottom: 110px;
   }
 }
+.product_items {
+  gap: 16px;
+}
+
 @media (max-width: 768px) {
   .sort {
     left: 390px;
+  }
+  .product_items {
+    gap: 16px;
   }
 }/*# sourceMappingURL=style_catalog_page.css.map */

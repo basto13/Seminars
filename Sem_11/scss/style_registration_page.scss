@@ -3,6 +3,7 @@
 .background_preview_content {
     justify-content: flex-start;
     padding-left: calc(8px + 1.5625vw);
+    margin-bottom: 64px;
 }
 
 .registration-wrapper {
@@ -57,6 +58,7 @@
         &_text {
             @include standard_text(#B1B1B1, 13px);
             margin-top: 15px;
+            margin-bottom: 39px;
         }
     }
 
