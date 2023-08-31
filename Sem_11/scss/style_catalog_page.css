@@ -184,4 +184,9 @@ summary::-webkit-details-marker {
   .input_form {
     margin-bottom: 110px;
   }
+}
+@media (max-width: 768px) {
+  .sort {
+    left: 390px;
+  }
 }/*# sourceMappingURL=style_catalog_page.css.map */

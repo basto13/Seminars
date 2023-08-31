@@ -42,13 +42,18 @@
 //products
 
 .product_item {
-    @include flex_block(center, space-between);
+    @include flex_block(center, center);
     background-color: #F7F7F7;
     @include flex_direction($fd);
     position: relative;
+
+    .product_img {
+        width: 60%;
+    }
 }
 
 .slider_button {
+    position: absolute;
     height: 47px;
     width: 47px;
     color: rgba(42, 42, 42);
@@ -56,6 +61,16 @@
     font-size: 30px;
     font-weight: bold;
     border: none;
+}
+
+.slider_button_right {
+    right: 0%;
+    top: 40%;
+}
+
+.slider_button_left {
+    left: 0%;
+    top: 40%;
 }
 
 .slider_button:hover {
@@ -74,6 +89,10 @@
     @include flex_wrap_column();
     margin-top: -3%;
     gap: 12px;
+
+    &_line {
+        width: 70%;
+    }
 
     &_heading_1 {
         @include heading_text($brand_pink_color, $font_size);
@@ -100,6 +119,13 @@
     @include flex_direction($fd);
     margin-top: 40px;
     margin-bottom: 10px;
+
+    color: #6F6E6E;
+    font-family: Lato;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 
     &_choice {
         @include flex_direction($fd);
@@ -144,14 +170,14 @@
     background-image: url(../img/sunscription_background.png);
 }
 
-@media (max-width: 1140px) {
-    .product_block:last-child {
-        display: none;
-    }
-}
+// @media (max-width: 1140px) {
+//     .product_block:last-child {
+//         display: none;
+//     }
+// }
 
 //media quaries
-@media only screen and (min-width: 768px) and (max-width: 1023px) {
+@media only screen and (min-width: 767px) and (max-width: 1023px) {
 
     //background preview (main menu)
     .background_preview {
@@ -177,5 +203,22 @@
 
     .product_description {
         width: 100%;
+
+        &_menu {
+            color: #6F6E6E;
+            font-family: Lato;
+            font-size: 10px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
     }
+
+    .input_form {
+        display: flex;
+        justify-content: center;
+        max-width: 80%;
+    }
+
+
 }

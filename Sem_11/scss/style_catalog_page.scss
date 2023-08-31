@@ -215,3 +215,9 @@ summary::-webkit-details-marker {
         margin-bottom: 110px;
     }
 }
+
+@media (max-width: 768px) {
+    .sort {
+        left: 390px;
+    }
+}

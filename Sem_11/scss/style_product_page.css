@@ -48,14 +48,18 @@
 .product_item {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   background-color: #F7F7F7;
   display: flex;
   flex-direction: row;
   position: relative;
 }
+.product_item .product_img {
+  width: 60%;
+}
 
 .slider_button {
+  position: absolute;
   height: 47px;
   width: 47px;
   color: rgb(42, 42, 42);
@@ -63,6 +67,16 @@
   font-size: 30px;
   font-weight: bold;
   border: none;
+}
+
+.slider_button_right {
+  right: 0%;
+  top: 40%;
+}
+
+.slider_button_left {
+  left: 0%;
+  top: 40%;
 }
 
 .slider_button:hover {
@@ -84,6 +98,9 @@
   align-items: center;
   margin-top: -3%;
   gap: 12px;
+}
+.product_description_line {
+  width: 70%;
 }
 .product_description_heading_1 {
   color: #F16D7F;
@@ -126,6 +143,12 @@
   flex-direction: row;
   margin-top: 40px;
   margin-bottom: 10px;
+  color: #6F6E6E;
+  font-family: Lato;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 .product_description_menu_choice {
   display: flex;
@@ -179,12 +202,7 @@
   background-image: url(../img/sunscription_background.png);
 }
 
-@media (max-width: 1140px) {
-  .product_block:last-child {
-    display: none;
-  }
-}
-@media only screen and (min-width: 768px) and (max-width: 1023px) {
+@media only screen and (min-width: 767px) and (max-width: 1023px) {
   .background_preview_content {
     display: flex;
     align-items: center;
@@ -203,5 +221,18 @@
   }
   .product_description {
     width: 100%;
+  }
+  .product_description_menu {
+    color: #6F6E6E;
+    font-family: Lato;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .input_form {
+    display: flex;
+    justify-content: center;
+    max-width: 80%;
   }
 }/*# sourceMappingURL=style_product_page.css.map */

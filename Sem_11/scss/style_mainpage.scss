@@ -21,12 +21,6 @@
     height: 75px;
 }
 
-.header_left,
-.header_right {
-    padding-bottom: 2em;
-    padding-top: 2em;
-}
-
 .header_left {
     @include flex_block($bl, $sb);
 }
@@ -506,7 +500,7 @@ h3 {
 }
 
 
-@media only screen and (min-width: 768px) and (max-width: 1023px) {
+@media only screen and (min-width: 767px) and (max-width: 1023px) {
     .navbar {
         justify-content: space-between;
     }
