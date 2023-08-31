@@ -11,31 +11,10 @@
     <link rel="stylesheet" href="./scss/style_product_page.css">
     <link rel="stylesheet" href="./scss/style_catalog_page.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
     <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
-    <script>
-        let isMenuOpen = false;
-
-        function showMenu(clickedElement) {
-            if (isMenuOpen) {
-                // set display: none on menu block
-                fuck.css('display', 'none')
-                isMenuOpen = false;
-            } else {
-                // 1. find menu block in layout
-                const menuBlock = $('.filter');
-
-                // 2. get top left position of clicked element
-                fuck.css('display', 'block');
-                fuck.css('top', menuBlock.offset().top);
-                fuck.css('left', menuBlock.offset().left);
-
-                // 3. set menuBlock top and left to found top and left
-            }
-            $('.filter_content').css('display', 'none');
-
-
-        }
-    </script>
+    
     <title>Catalog</title>
 </head>
 
@@ -637,34 +616,9 @@
         </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-
-    <!-- Swiper JS -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-
-
+    <!-- Initialize Swiper -->
     <script>
         var swiper = new Swiper(".mySwiper", {
-            // // Default parameters
-            // slidesPerView: 1,
-            // spaceBetween: 10,
-            // // Responsive breakpoints
-            // breakpoints: {
-            //     // when window width is >= 320px
-            //     320: {
-            //         slidesPerView: 2,
-            //         spaceBetween: 20
-            //     },
-            //     // when window width is >= 480px
-            //     480: {
-            //         slidesPerView: 3,
-            //         spaceBetween: 30
-            //     },
-            //     // when window width is >= 640px
-            //     640: {
-            //         slidesPerView: 4,
-            //         spaceBetween: 40
-            //     },
             pagination: {
                 el: ".swiper-pagination",
                 clickable: true,
