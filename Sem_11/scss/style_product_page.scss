@@ -182,6 +182,10 @@
 
 //media quaries
 @media only screen and (min-width: 767px) and (max-width: 1023px) {
+    .navbar {
+        justify-content: space-between;
+        padding: 0 20px;
+    }
 
     //background preview (main menu)
     .background_preview {
@@ -198,15 +202,16 @@
 
 @media (max-width: 767px) {
 
+    .navbar {
+        justify-content: space-between;
+        padding: 0 20px;
+    }
+
     //background preview (main menu)
     .background_preview {
         &_content {
             @include flex_wrap_column();
         }
-    }
-
-    .product_items {
-        grid-template-columns: fit-content(80%);
     }
 
     .product_description {

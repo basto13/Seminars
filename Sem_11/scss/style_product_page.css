@@ -212,6 +212,10 @@
   }
 }
 @media only screen and (min-width: 767px) and (max-width: 1023px) {
+  .navbar {
+    justify-content: space-between;
+    padding: 0 20px;
+  }
   .background_preview_content {
     display: flex;
     align-items: center;
@@ -222,14 +226,15 @@
   }
 }
 @media (max-width: 767px) {
+  .navbar {
+    justify-content: space-between;
+    padding: 0 20px;
+  }
   .background_preview_content {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
-  }
-  .product_items {
-    grid-template-columns: fit-content(80%);
   }
   .product_description {
     width: 100%;

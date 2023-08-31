@@ -132,12 +132,6 @@
   .information {
     font-size: 16px;
   }
-  .subscribe_text {
-    margin-bottom: 48px;
-  }
-  .input_form {
-    margin-bottom: 220px;
-  }
 }
 @media (max-width: 767px) {
   .background_preview_content {
@@ -158,11 +152,5 @@
   .information {
     font-size: 16px;
     max-width: 359px;
-  }
-  .subscribe_text {
-    margin-bottom: 60px;
-  }
-  .input_form {
-    margin-bottom: 110px;
   }
 }/*# sourceMappingURL=style_registration_page.css.map */

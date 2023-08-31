@@ -526,6 +526,14 @@ h3 {
         flex-wrap: wrap;
     }
 
+    .subscribe_text {
+        margin-bottom: 60px;
+    }
+
+    .input_form {
+        margin-bottom: 110px;
+    }
+
     /* footer section */
     .footer_section {
         padding-left: 2%;
@@ -578,6 +586,10 @@ h3 {
 
     .offer_block {
         margin: 0%;
+    }
+
+    .product_items {
+        grid-template-columns: fit-content(80%);
     }
 
     /* services description */
