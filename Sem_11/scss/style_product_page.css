@@ -54,7 +54,7 @@
   flex-direction: row;
   position: relative;
 }
-.product_item .product_img {
+.product_item .product_main_img {
   width: 60%;
 }
 
@@ -202,6 +202,15 @@
   background-image: url(../img/sunscription_background.png);
 }
 
+.product_img {
+  width: 100%;
+}
+
+@media (max-width: 1140px) {
+  .product_block:last-child {
+    display: none;
+  }
+}
 @media only screen and (min-width: 767px) and (max-width: 1023px) {
   .background_preview_content {
     display: flex;
@@ -218,6 +227,9 @@
     flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
+  }
+  .product_items {
+    grid-template-columns: fit-content(80%);
   }
   .product_description {
     width: 100%;

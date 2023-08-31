@@ -39,7 +39,7 @@
     }
 }
 
-//products
+//product
 
 .product_item {
     @include flex_block(center, center);
@@ -47,7 +47,7 @@
     @include flex_direction($fd);
     position: relative;
 
-    .product_img {
+    .product_main_img {
         width: 60%;
     }
 }
@@ -170,11 +170,15 @@
     background-image: url(../img/sunscription_background.png);
 }
 
-// @media (max-width: 1140px) {
-//     .product_block:last-child {
-//         display: none;
-//     }
-// }
+.product_img {
+    width: 100%;
+}
+
+@media (max-width: 1140px) {
+    .product_block:last-child {
+        display: none;
+    }
+}
 
 //media quaries
 @media only screen and (min-width: 767px) and (max-width: 1023px) {
@@ -199,6 +203,10 @@
         &_content {
             @include flex_wrap_column();
         }
+    }
+
+    .product_items {
+        grid-template-columns: fit-content(80%);
     }
 
     .product_description {
