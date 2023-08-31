@@ -18,11 +18,16 @@
         function showMenu(clickedElement) {
             if (isMenuOpen) {
                 // set display: none on menu block
+                fuck.css('display', 'none')
+                isMenuOpen = false;
             } else {
                 // 1. find menu block in layout
-                // const menuBlock = $('.filter_content')
+                const menuBlock = $('.filter');
 
                 // 2. get top left position of clicked element
+                fuck.css('display', 'block');
+                fuck.css('top', menuBlock.offset().top);
+                fuck.css('left', menuBlock.offset().left);
 
                 // 3. set menuBlock top and left to found top and left
             }

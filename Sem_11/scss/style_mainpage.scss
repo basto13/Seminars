@@ -162,6 +162,10 @@
 
 .product_img {
     position: relative;
+
+    &_sample {
+        width: 100%;
+    }
 }
 
 .layer {
@@ -294,7 +298,7 @@ h3 {
     @include flex_block(center, center);
     flex-grow: 1;
     flex: 1;
-    width: 30%;
+    width: 80%;
     padding: 3%;
 }
 
@@ -323,7 +327,7 @@ h3 {
 .subscribtion_section {
     display: block;
     width: 100%;
-    background-image: url(img/sunscription_background.png);
+    background-image: url(../img/sunscription_background.png);
     background-color: rgba(244, 244, 244, 0.70);
     min-height: 448px;
     background-position: 25% 75%;
@@ -498,6 +502,7 @@ h3 {
 @media only screen and (min-width: 767px) and (max-width: 1023px) {
     .navbar {
         justify-content: space-between;
+        padding: 0 20px;
     }
 
     .offers_menu {
@@ -541,6 +546,7 @@ h3 {
 
     .navbar {
         justify-content: space-between;
+        padding: 0 20px;
     }
 
     .navbar_menu:nth-child(2) {
@@ -583,13 +589,26 @@ h3 {
         margin: 0%;
     }
 
+
+
+    // product section
+
     .product_items {
         grid-template-columns: fit-content(80%);
+        margin-bottom: 100px;
     }
 
     /* services description */
     .services_description {
         @include flex_wrap_column();
+    }
+
+    .service_item:last-child {
+        padding-bottom: 80px;
+    }
+
+    .service_item:first-child {
+        padding-top: 48px;
     }
 
     /* subscribe section */
@@ -604,6 +623,9 @@ h3 {
     }
 
     .input_form {
+        display: flex;
+        justify-content: center;
+        max-width: 80%;
         margin-bottom: 110px;
     }
 
