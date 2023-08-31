@@ -41,6 +41,10 @@
 
 //product
 
+.product_items {
+    gap: 0;
+}
+
 .product_item {
     @include flex_block(center, center);
     background-color: #F7F7F7;
@@ -212,6 +216,14 @@
         &_content {
             @include flex_wrap_column();
         }
+    }
+
+    .product_items {
+        margin-bottom: 100px;
+    }
+
+    .product_block {
+        margin-bottom: 0;
     }
 
     .product_description {

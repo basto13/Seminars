@@ -153,13 +153,14 @@
 }
 
 .product_block {
-  background-color: #F8F8F8;
   color: #000;
   font-family: Lato;
-  font-size: 13px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 300;
   line-height: normal;
+  font-size: 13px;
+  background-color: #F8F8F8;
+  font-weight: 400;
 }
 
 .product_img {
